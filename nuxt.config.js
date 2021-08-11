@@ -23,16 +23,9 @@ export default {
       { charset: 'utf-8' },
       { name: 'viewport', content: 'width=device-width, initial-scale=1' },
       { hid: 'description', name: 'description', content: '' },
-      { name: 'google-site-verification', content: 'KWM5elXl5PN_X_Fk5XDQCItMMe5qHYvFJkbZUaDbRqg'}
     ],
     link: [{ rel: 'icon', type: 'image/x-icon', href: '/favicon.svg' }],
     script: [
-      // {
-      //   id: 'becookies.tech-scripts',
-      //   src: 'https://core.becookies.tech/script.js',
-      //   'data-id': 'cdf46500-7007-11eb-b393-31e9f2611317',
-      //   charset: 'utf-8',
-      // },
     ],
   },
 
@@ -50,7 +43,6 @@ export default {
     '@/plugins/modal',
     '@/plugins/model',
     '@/plugins/notification',
-    '@/plugins/ga',
     '@/plugins/vue-color',
     '@/plugins/apexCharts',
   ],
