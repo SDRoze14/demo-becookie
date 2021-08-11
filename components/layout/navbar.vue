@@ -122,14 +122,14 @@
               </div>
             </div>
           </li>
-          <li class="mr-4 border-r h-10 border-white hidden lg:block"></li>
-          <li class="mr-4" v-if="!logined">
+          <!-- <li class="mr-4 border-r h-10 border-white hidden lg:block"></li> -->
+          <!-- <li class="mr-4" v-if="!logined">
             <nuxt-link
               class="inline-block text-white text-sm no-underline hover:text-gray-200 py-2 px-4"
               :to="{ path: localePath('login') }"
               >{{ $t('nav.login') }}</nuxt-link
             >
-          </li>
+          </li> -->
           <!-- <li class="mr-4 mt-4 lg:mt-0" v-if="!logined">
             <nuxt-link
               class="inline-block bg-white text-primary no-underline hover:text-blue-800 py-1 px-6 border border-white rounded-full"
@@ -138,13 +138,13 @@
             >
           </li> -->
 
-          <li class="mr-4" v-if="logined">
+          <!-- <li class="mr-4" v-if="logined">
             <nuxt-link
               class="inline-block text-white text-sm no-underline hover:text-gray-200 py-2 px-4"
               :to="{ path: localePath('websites') }"
               >{{user.email ? user.email : `${user.first_name} ${user.last_name}`}}</nuxt-link
             >
-          </li>
+          </li> -->
         </ul>
       </div>
     </div>
