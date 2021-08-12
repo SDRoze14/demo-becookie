@@ -61,13 +61,12 @@ export default {
       if (this.multi) {
         return this.value.includes(this.inputValue)
       } else {
-        return this.value === this.inputValue || this.value == true
+        return this.value === this.inputValue || this.value === true
           ? true
           : false
       }
     },
   },
-  mounted() {},
   methods: {
     click() {
       const self = this

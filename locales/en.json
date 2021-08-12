@@ -387,5 +387,12 @@
     "att": "Att: Data Protection Office",
     "address": "beCOOKIES address 184/87 Forum Tower 18th Fl., Ratchadaphisek Road, Huai Kwang, Huai Kwang, Bangkok 10310, Thailand",
     "end": "Privacy Notice Established on May 1st, 2021"
+  },
+  "error": {
+    "manage_domain": {
+      "empty_domain": "Please enter Domain Name.",
+      "invalid_domain": "Invalid Domain Name.",
+      "empty_org": "Please select Organization"
+    }
   }
 }

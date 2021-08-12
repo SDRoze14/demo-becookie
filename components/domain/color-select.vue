@@ -22,9 +22,7 @@ export default {
     return {}
   },
   components: {},
-  mounted() {},
   methods: {},
 }
 </script>
 
-<style></style>

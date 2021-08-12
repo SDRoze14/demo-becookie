@@ -86,7 +86,6 @@ export default {
       return this.cat.categoryId ? true : false
     },
   },
-  mounted() {},
   methods: {
     show(cat = {}) {
       this.cat = cat
@@ -120,7 +119,7 @@ export default {
             self.$emit('updated', true)
           })
           .catch((error) => {
-            var code = res.response.data.code
+            var code = error.response.data.code
             if (code == 'InvalidParameterException')
               self.error = 'Password must have length greater than 6'
             else self.error = 'Unknow error.'
@@ -137,7 +136,7 @@ export default {
             self.$emit('added', true)
           })
           .catch((error) => {
-            var code = res.response.data.code
+            var code = error.response.data.code
             if (code == 'InvalidParameterException')
               self.error = 'Password must have length greater than 6'
             else self.error = 'Unknow error.'
@@ -150,4 +149,3 @@ export default {
 }
 </script>
 
-<style></style>

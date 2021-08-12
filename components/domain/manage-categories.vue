@@ -35,24 +35,9 @@
           <div v-if="c.necessary" class="mr-4 text-primary text-sm">
             Always Active
           </div>
-          <!-- <div class="duration-200" :class="c.open ? 'transform -rotate-180' : 'transform -rotate-90'" @click="c.open = !c.open">
-            <base-icon
-              icon="dropdown"
-              width="14"
-              height="14"
-              color="primary"
-            ></base-icon>
-          </div> -->
         </div>
-        <!-- <div v-if="c.open">
-          {{c.description}}
-        </div> -->
       </div>
     </div>
-
-    <!-- <div class="text-primary text-xs mt-4">
-      *You can create new categories at Categorizations menu > Create Category
-    </div> -->
 
     <div
       v-if="error"
@@ -92,7 +77,6 @@ export default {
       return isSelectAll
     },
   },
-  mounted() {},
   methods: {
     show(categoriesSelect) {
       this.isShow = true
@@ -116,12 +100,12 @@ export default {
     selectAllClick(e) {
       var categoriesSelectUse = this.categoriesSelectUse
       if (e) {
-        categoriesSelectUse.forEach((e) => {
-          e.active = true
+        categoriesSelectUse.forEach((c) => {
+          c.active = true
         })
       } else {
-        categoriesSelectUse.forEach((e) => {
-          e.active = e.necessary ? true : false
+        categoriesSelectUse.forEach((c) => {
+          c.active = c.necessary ? true : false
         })
       }
       this.categoriesSelectUse = categoriesSelectUse
@@ -145,4 +129,3 @@ export default {
 }
 </script>
 
-<style></style>
