@@ -393,6 +393,31 @@
       "empty_domain": "กรุณากรอกชื่อโดเมน",
       "invalid_domain": "ชื่อโนเมนไม่ถูกต้อง",
       "empty_org": "กรุณาเลือกองคืกรณ์"
+    },
+    "cahnge_pass": {
+      "empty_oldpass": "กรุณากรอกรหัสผ่านปัจจุบัน",
+      "empty_newpass": "กรุณากรอกรหัสผ่านใหม่",
+      "empty_confirmpass": "กรุณากรอกยืนยันรหัสผ่านใหม่",
+      "not_match": "รหัสผ่านไม่ตรงกัน",
+      "change_error": "มีบางอย่างผิดพลาด โปรดลองอีกครั้ง"
+    },
+    "forgot": {
+      "not_found": "ไม่พบอีเมลนี้ในระบบ",
+      "empty_mail": "กรุณากรอกอีเมล",
+      "invalid_mail": "อีเมลไม่ถูกต้อง"
+    },
+    "manage_user_org": {
+      "invalid_mail": "อีเมลไม่ถูกต้อง",
+      "empty_mail": "กรุณากรอกอีเมล",
+      "not_found": "ไม่พบผู้ใช้"
+    }
+  },
+  "success": {
+    "change_pass": {
+      "change_success": "เปลี่ยนรหัสผ่านแล้ว"
+    },
+    "forgot": {
+      "success": "อีเมลถูกส่งแล้ว"
     }
   }
 }

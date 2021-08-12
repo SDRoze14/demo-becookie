@@ -15,7 +15,6 @@
         :disabled="isUpdate"
       ></base-input>
     </div>
-    <!-- v-if="isUpdate" -->
     <div class="mt-6">
       <div>User Role</div>
       <div class="flex">
@@ -74,7 +73,6 @@ export default {
       return this.user.userId ? true : false
     },
   },
-  mounted() {},
   methods: {
     show(user = {}) {
       this.user = user
@@ -102,8 +100,8 @@ export default {
             self.isShow = false
             self.$emit('updated', true)
           })
-          .catch((error) => {
-            var code = error.response.data.code
+          .catch((err) => {
+            var code = err.response.data.code
             if (code == 'InvalidParameterException')
               self.error = 'Password must have length greater than 6'
             else self.error = 'Unknow error.'
@@ -118,8 +116,8 @@ export default {
             self.isShow = false
             self.$emit('added', true)
           })
-          .catch((error) => {
-            var code = error.response.data.message
+          .catch((err) => {
+            var code = err.response.data.message
             self.error = code
           })
       }

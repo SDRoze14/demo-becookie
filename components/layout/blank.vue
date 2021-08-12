@@ -65,13 +65,6 @@
               >Login</nuxt-link
             >
           </li>
-          <!-- <li class="mr-4 mt-4 lg:mt-0">
-            <nuxt-link
-              class="inline-block text-white text-sm no-underline hover:text-gray-200 py-2 px-6 border border-white rounded-full"
-              to="/"
-              >Try for free</nuxt-link
-            >
-          </li> -->
         </ul>
       </div>
     </div>
@@ -91,7 +84,7 @@ export default {
     var navMenuDiv = document.getElementById('nav-content')
     var navMenu = document.getElementById('nav-toggle')
     document.onclick = function (e) {
-      var target = (e && e.target) || (event && event.srcElement)
+      var target = (e && e.target)
 
       //Nav Menu
       if (!self.checkParent(target, navMenuDiv)) {

@@ -2,7 +2,6 @@
   <div>
     <base-modal v-model="isShow" :width="800">
       <div>
-        <!-- <div class="text-xl">ขั้นตอนการใช้งาน Script beCOOKIES</div> -->
 
         <div
           class="text bg-green-200 text-green-700 text-center rounded py-2 px-3"

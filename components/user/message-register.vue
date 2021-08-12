@@ -3,18 +3,6 @@
     <base-modal v-model="isShow" :width="900">
       <div class="text-xl">{{ $t('stepUse.title')}}</div>
       <div>
-        <!-- <div class="flex pt-5 items-center">
-          <div
-            class="w-10 bg-primary py-1 text-center text-white rounded-full text-xl"
-          >
-            1
-          </div>
-          <div class="pl-3 text-lg">สมัครเข้าใช้งาน</div>
-        </div>
-        <div class="pl-12 text-gray-400">
-          โดยโดเมนของอีเมลที่ใช้ลงทะเบียนจะต้องเป็นโดเมนเดียวกับเว็บไซต์ที่ต้องการจะนำ​
-          script​ ไปวาง​
-        </div> -->
         <div class="flex py-5 items-center">
           <div
             class="w-10 bg-primary py-1 text-center text-white rounded-full text-xl"
@@ -42,7 +30,6 @@
           </div>
         </div>
       </div>
-      <!-- <div class="text-sm text-gray-400 py-2">*ขั้นตอนนี้แนะนำให้ทางทีม หรือผู้พัฒนาเว็บไซต์เป็นผู้ดำเนินการ</div> -->
 
       <div class="flex py-5 items-center">
         <div
@@ -75,18 +62,6 @@
           }}
         </div>
       </div>
-
-      <!-- <div class="text bg-green-200 text-green-700 text-center rounded py-2">
-      {{
-        $t('lang') == 'en'
-          ? 'Please check your email to confirm your registration'
-          : 'ท่านได้สมัครเข้าใช้เรียนร้อย กรุณาตรวจสอบอีเมล์ของท่านเพื่อยืนยันการสมัคร'
-      }}
-    </div> -->
-
-      <!-- <div class="py-3">
-      <img src="../../assets/img/mail-sent.png" width="250" alt="" class="mx-auto">
-    </div> -->
 
       <div class="flex mt-5">
         <div class="mx-auto">
@@ -129,7 +104,13 @@ export default {
             duration: 4000,
           })
         },
-        function (err) {}
+        function (err) {
+          self.$toast.open({
+            message: err,
+            type: 'error',
+            duration: 4000,
+          })
+        }
       )
     },
     message2Click() {

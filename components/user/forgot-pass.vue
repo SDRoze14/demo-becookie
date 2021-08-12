@@ -44,8 +44,8 @@ export default {
       let error = ''
 
       
-      if (!self.email) error = self.$t('lang') == 'en' ? 'Please enter your email.' : 'กรุณากรอกอีเมล'
-      else if (!self.$model.validateEmail(self.email)) error = self.$t('lang') == 'en' ? 'Invalid email' : 'อีเมลไม่ถูกต้อง'
+      if (!self.email) error = self.$t('error.forgot.empty_mail')
+      else if (!self.$model.validateEmail(self.email)) error = self.$t('error.forgot.invalid_mail')
 
       self.error = error
 
@@ -58,15 +58,15 @@ export default {
       })
         .then(response => {
           self.$toast.open({
-            message: self.$t('lang') == 'en' ? 'Send Email Success.' : 'อีเมลถูกส่งแล้ว',
+            message: self.$t('success.forgot.success'),
             type: 'success',
             duration: 6000,
           })
           self.isShow = false
         })
-        .catch(error => {
+        .catch(err => {
           self.$toast.open({
-            message: error.response.data.message == 'Not found' ? self.$t('lang') == 'en' ? 'Could not find an email address' : 'ไม่พบอีเมลนี้ในระบบ' : error.response.data.message,
+            message: err.response.data.message == 'Not found' ? self.$t('error.forget.not_found') : error.response.data.message,
             type: 'error',
             duration: 6000,
           })

@@ -393,6 +393,31 @@
       "empty_domain": "Please enter Domain Name.",
       "invalid_domain": "Invalid Domain Name.",
       "empty_org": "Please select Organization"
+    },
+    "cahnge_pass": {
+      "empty_oldpass": "Please enter current password",
+      "empty_newpass": "Please enter new password",
+      "empty_confirmpass": "Please enter confirm new password",
+      "not_match": "Password do not match",
+      "change_error": "Something wrong. Please try again"
+    },
+    "forgot": {
+      "not_found": "Could not find an email address",
+      "empty_mail": "Please enter your email.",
+      "invalid_mail": "Invalid email"
+    },
+    "manage_user_org": {
+      "invalid_mail": "Invalid email.",
+      "empty_mail": "Please enter your Email.",
+      "not_found": "User not found"
+    }
+  },
+  "success": {
+    "change_pass": {
+      "change_success": "Change Password Successfully."
+    },
+    "forgot": {
+      "success": "Send Email Success."
     }
   }
 }

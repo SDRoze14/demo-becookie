@@ -130,13 +130,6 @@
               >{{ $t('nav.login') }}</nuxt-link
             >
           </li>
-          <!-- <li class="mr-4 mt-4 lg:mt-0" v-if="!logined">
-            <nuxt-link
-              class="inline-block bg-white text-primary no-underline hover:text-blue-800 py-1 px-6 border border-white rounded-full"
-              :to="{ path: localePath('signup') }"
-              >{{ $t('nav.tryFree') }}</nuxt-link
-            >
-          </li> -->
 
           <li class="mr-4" v-if="logined">
             <nuxt-link
@@ -168,13 +161,8 @@ export default {
       if (
         this.$route.path == '/' ||
         this.$route.path == '/th'
-      ) {
-        check = true
-      } else {
-        check = false
-      }
-
-      return check
+      ) return true
+      else false
     },
     logined() {
       let token = this.$store.getters['me/getToken']
@@ -182,15 +170,15 @@ export default {
       else false
     },
     user() {
-      let user = this.$store.getters['me/getUser']
-      return user
+      return this.$store.getters['me/getUser']
     }
   },
   mounted() {
+    let self = this
     var navMenuDiv = document.getElementById('nav-content')
     var navMenu = document.getElementById('nav-toggle')
     document.onclick = function (e) {
-      var target = (e && e.target) || (event && event.srcElement)
+      var target = (e && e.target)
 
       //Nav Menu
       if (!self.checkParent(target, navMenuDiv)) {
