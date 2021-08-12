@@ -1,9 +1,5 @@
 <template>
   <div>
-    <!-- <div class="text-xl mb-4">{{$t('website.scriptTitle')}}</div>
-    <div class="text-sm text-gray-500 mb-4">
-      {{$t('website.scriptDescription')}}
-    </div> -->
 
     <div class="border border-gray-100 bg-gray-50 rounded-md px-4 py-3">
       <div class="flex justify-between">
@@ -59,11 +55,15 @@ export default {
             duration: 4000,
           })
         },
-        function (err) {}
+        function (err) {
+          self.$toast.open({
+            message: err,
+            type: 'error',
+            duration: 4000,
+          })
+        }
       )
     },
   },
 }
 </script>
-
-<style></style>

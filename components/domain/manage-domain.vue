@@ -176,8 +176,8 @@ export default {
             self.isShow = false
             self.$emit('updated', true)
           })
-          .catch((error) => {
-            self.error = error.response.data.message
+          .catch((err) => {
+            self.error = err.response.data.message
           })
       } else {
         await self.$api
@@ -193,8 +193,8 @@ export default {
             self.isShow = false
             self.$emit('added', true)
           })
-          .catch((error) => {
-              self.error = error.response.data.message
+          .catch((err) => {
+              self.error = err.response.data.message
           })
       }
 
@@ -204,4 +204,3 @@ export default {
 }
 </script>
 
-<style></style>
