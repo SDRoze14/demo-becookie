@@ -128,10 +128,7 @@ export default {
           self.$emit("updated", true);
         })
         .catch((err) => {
-          var code = err.response.data.code;
-          if (code == "InvalidParameterException")
-            self.error = "Password must have length greater than 6";
-          else self.error = "Unknow error.";
+          self.error = err.response.data.message;
         });
     },
     async addCate() {
@@ -147,10 +144,7 @@ export default {
           self.$emit("added", true);
         })
         .catch((err) => {
-          var code = err.response.data.code;
-          if (code == "InvalidParameterException")
-            self.error = "Password must have length greater than 6";
-          else self.error = "Unknow error.";
+          self.error = err.response.data.message;
         });
     },
   },

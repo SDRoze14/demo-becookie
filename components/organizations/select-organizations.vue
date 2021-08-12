@@ -55,7 +55,7 @@ export default {
       .then( (response) => {
          this.$store.commit('me/SET_ROLE', response.data.organization_user.role)
       })
-      .catch(error => {})
+      .catch()
       if (self.select_id) {
         const org = self.organizations.find(e => 
           e.id == self.select_id

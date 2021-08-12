@@ -152,7 +152,6 @@
 </template>
 
 <script>
-import { locale } from '~/node_modules/dayjs'
 export default {
   data() {
     return {
@@ -165,42 +164,29 @@ export default {
   },
   computed: {
     homeCheck() {
+      let check = true
       if (
         this.$route.path == '/' ||
         this.$route.path == '/th'
       ) {
-        return true
+        check = true
       } else {
-        return false
+        check = false
       }
+
+      return check
     },
     logined() {
-      let token = localStorage.getItem('token')
+      let token = this.$store.getters['me/getToken']
       if (token) return true
       else false
     },
     user() {
-      let user = JSON.parse(localStorage.getItem('user'))
+      let user = this.$store.getters['me/getUser']
       return user
     }
   },
   mounted() {
-    const self = this
-    // if (
-    //   self.$route.path == '/th/login' ||
-    //   self.$route.path == '/login' ||
-    //   self.$route.path == '/th/signup' ||
-    //   self.$route.path == '/signup' ||
-    //   self.$route.path == '/th/faq' ||
-    //   self.$route.path == '/faq' ||
-    //   self.$route.path == ''
-    // ) {
-    //   self.homeCheck == false
-    // } else {
-    //   self.homeCheck = true
-    // }
-
-
     var navMenuDiv = document.getElementById('nav-content')
     var navMenu = document.getElementById('nav-toggle')
     document.onclick = function (e) {

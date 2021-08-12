@@ -326,7 +326,7 @@ export default {
         {
           category_id: cat.id
         }
-      ).then(response => {})
+      )
       .catch(error => {
         this.$toast.open({
             message: error.response.data.message,
