@@ -157,7 +157,6 @@ export default {
   },
   computed: {
     homeCheck() {
-      let check = true
       if (
         this.$route.path == '/' ||
         this.$route.path == '/th'
@@ -167,7 +166,7 @@ export default {
     logined() {
       let token = this.$store.getters['me/getToken']
       if (token) return true
-      else false
+      else return false
     },
     user() {
       return this.$store.getters['me/getUser']

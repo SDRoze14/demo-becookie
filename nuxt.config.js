@@ -12,27 +12,23 @@ export default {
       'https://core.staging.becookies.tech/script.js',
   },
 
-  // Global page headers (https://go.nuxtjs.dev/config-head)
-  // <script id="becookies.tech-scripts" async="" src="https://core.staging.becookies.tech/script.js" data-preview="true" data-id="7cb94940-6e0d-11eb-99c1-bbb73faf0e4b" charset="utf-8"></script>
-  // <meta name="google-site-verification" content="KWM5elXl5PN_X_Fk5XDQCItMMe5qHYvFJkbZUaDbRqg" />
-  // <script id="becookies.tech-scripts" src="https://core.becookies.tech/script.js" data-id="cdf46500-7007-11eb-b393-31e9f2611317" charset="utf-8"></script>
-  // <script id="becookies.tech-scripts" src="https://core.becookies.tech/script.js" data-id="0c7bbe50-a2a2-11eb-a94b-a512dc6b7fed" charset="utf-8"></script>
+  // <script id="becookies.tech-scripts" async="" src="https://cookie.ghbank.co.th/script.js" data-id="61136fd2b28678b88b56a1ad" charset="utf-8"></script>
   head: {
     title: 'beCOOKIES',
     meta: [
       { charset: 'utf-8' },
       { name: 'viewport', content: 'width=device-width, initial-scale=1' },
       { hid: 'description', name: 'description', content: '' },
-      { name: 'google-site-verification', content: 'KWM5elXl5PN_X_Fk5XDQCItMMe5qHYvFJkbZUaDbRqg'}
     ],
     link: [{ rel: 'icon', type: 'image/x-icon', href: '/favicon.svg' }],
     script: [
-      // {
-      //   id: 'becookies.tech-scripts',
-      //   src: 'https://core.becookies.tech/script.js',
-      //   'data-id': 'cdf46500-7007-11eb-b393-31e9f2611317',
-      //   charset: 'utf-8',
-      // },
+      {
+        id: 'becookies.tech-scripts',
+        async: '',
+        src: 'https://cookie.ghbank.co.th/script.js',
+        'data-id': '61136fd2b28678b88b56a1ad',
+        charset: 'utf-8',
+      },
     ],
   },
 
@@ -50,7 +46,6 @@ export default {
     '@/plugins/modal',
     '@/plugins/model',
     '@/plugins/notification',
-    '@/plugins/ga',
     '@/plugins/vue-color',
     '@/plugins/apexCharts',
   ],
@@ -97,7 +92,6 @@ export default {
   i18n: {
     // locales: ['th', 'en'],
     defaultLocale: 'th',
-    detectBrowserLanguage: false,
     locales: [
       { code: 'th', iso: 'th-TH', dir: 'ltr' },
       { code: 'en', iso: 'en-US', dir: 'ltr' },
