@@ -3,7 +3,7 @@ export default {
   ssr: false,
   mode: 'spa',
   server: {
-    port: 3000,
+    port: 15000,
     host: '0.0.0.0',
   },
   publicRuntimeConfig: {
