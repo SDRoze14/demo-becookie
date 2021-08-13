@@ -26,7 +26,7 @@ export default {
         id: 'becookies.tech-scripts',
         async: '',
         src: 'https://cookie.ghbank.co.th/script.js',
-        'data-id': '61136fd2b28678b88b56a1ad',
+        'data-id': '6115cb2eb28678b88b56a1c0',
         charset: 'utf-8',
       },
     ],
