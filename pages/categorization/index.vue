@@ -229,7 +229,7 @@ export default {
               -1
           )
             return true
-          else return false
+          return false
         })
       }
       return list
@@ -241,7 +241,7 @@ export default {
         list = list.filter((e) => {
           if (e.name.toLowerCase().search(self.cookieQ.toLowerCase()) > -1)
             return true
-          else return false
+          return false
         })
       }
       return list
