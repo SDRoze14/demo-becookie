@@ -16,12 +16,6 @@ export default {
   // <script id="becookies.tech-scripts" src="https://core.staging.becookies.tech/script.js" data-id="542e6250-fdc6-11eb-9a47-4108494640b8" charset="utf-8"></script>
   head: {
     title: 'DEMO beCOOKIES',
-    meta: [
-      { charset: 'utf-8' },
-      { name: 'viewport', content: 'width=device-width, initial-scale=1' },
-      { hid: 'description', name: 'description', content: '' },
-      { name: 'google-site-verification', content: 'KWM5elXl5PN_X_Fk5XDQCItMMe5qHYvFJkbZUaDbRqg'}
-    ],
     script: [
       {
         id: 'becookies.tech-scripts',
@@ -29,6 +23,12 @@ export default {
         'data-id': '542e6250-fdc6-11eb-9a47-4108494640b8',
         charset: 'utf-8',
       },
+    ],
+    meta: [
+      { charset: 'utf-8' },
+      { name: 'viewport', content: 'width=device-width, initial-scale=1' },
+      { hid: 'description', name: 'description', content: '' },
+      { name: 'google-site-verification', content: 'KWM5elXl5PN_X_Fk5XDQCItMMe5qHYvFJkbZUaDbRqg'}
     ],
   },
 
