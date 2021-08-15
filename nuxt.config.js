@@ -3,7 +3,7 @@ export default {
   ssr: false,
   mode: 'spa',
   server: {
-    port: 3000,
+    port: 15000,
     host: '0.0.0.0',
   },
   publicRuntimeConfig: {
@@ -18,14 +18,13 @@ export default {
   // <script id="becookies.tech-scripts" src="https://core.becookies.tech/script.js" data-id="cdf46500-7007-11eb-b393-31e9f2611317" charset="utf-8"></script>
   // <script id="becookies.tech-scripts" src="https://core.becookies.tech/script.js" data-id="0c7bbe50-a2a2-11eb-a94b-a512dc6b7fed" charset="utf-8"></script>
   head: {
-    title: 'beCOOKIES',
+    title: 'DEMO beCOOKIES',
     meta: [
       { charset: 'utf-8' },
       { name: 'viewport', content: 'width=device-width, initial-scale=1' },
       { hid: 'description', name: 'description', content: '' },
       { name: 'google-site-verification', content: 'KWM5elXl5PN_X_Fk5XDQCItMMe5qHYvFJkbZUaDbRqg'}
     ],
-    link: [{ rel: 'icon', type: 'image/x-icon', href: '/favicon.svg' }],
     script: [
       {
         id: 'becookies.tech-scripts',
