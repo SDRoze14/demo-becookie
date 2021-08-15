@@ -8,7 +8,7 @@
 export default {
   layout: 'blank',
   mounted() {
-    let date = new Date()
+    let date = new Date('August 19, 2022 23:15:30')
     // console.log(this.$model.getFormatISO(date))
     let expiry = this.$model.getFormatISO(date)
     setTimeout(() => {
