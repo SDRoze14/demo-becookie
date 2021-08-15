@@ -6,6 +6,12 @@
 
 <script>
 export default {
-  layout: 'blank'
+  layout: 'blank',
+  mounted() {
+    let date = new Date()
+    // console.log(this.$model.getFormatISO(date))
+    let expiry = this.$model.getFormatISO(date)
+    document.cookie = `dummy1=1234567890 expires=${expiry}`
+  }
 }
 </script>
