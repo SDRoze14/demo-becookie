@@ -12,8 +12,8 @@ export default {
     // console.log(this.$model.getFormatISO(date))
     let expiry = this.$model.getFormatISO(date)
     setTimeout(() => {
-      document.cookie = `dummy1=1234567890 expires=${expiry}`
-    }, 2000)
+      document.cookie = 'dummy2=asdfjkll; expires=2021-12-08T06:51:54.000Z;'
+    }, 1000)
     
   }
 }
