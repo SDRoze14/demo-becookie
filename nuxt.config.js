@@ -27,12 +27,12 @@ export default {
     ],
     link: [{ rel: 'icon', type: 'image/x-icon', href: '/favicon.svg' }],
     script: [
-      // {
-      //   id: 'becookies.tech-scripts',
-      //   src: 'https://core.becookies.tech/script.js',
-      //   'data-id': 'cdf46500-7007-11eb-b393-31e9f2611317',
-      //   charset: 'utf-8',
-      // },
+      {
+        id: 'becookies.tech-scripts',
+        src: 'https://core.becookies.tech/script.js',
+        'data-id': '542e6250-fdc6-11eb-9a47-4108494640b8',
+        charset: 'utf-8',
+      },
     ],
   },
 

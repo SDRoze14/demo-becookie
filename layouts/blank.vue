@@ -1,13 +1,13 @@
 <template>
-  <div class="gradient leading-relaxed tracking-wide flex flex-col">
-    <blank />
+  <!-- <div class="gradient leading-relaxed tracking-wide flex flex-col">
+    <blank /> -->
 
     <div class="">
       <nuxt />
     </div>
 
-    <footerbar />
-  </div>
+    <!-- <footerbar />
+  </div> -->
 </template>
 
 <script>
