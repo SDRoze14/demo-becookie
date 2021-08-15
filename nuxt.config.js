@@ -13,10 +13,7 @@ export default {
   },
 
   // Global page headers (https://go.nuxtjs.dev/config-head)
-  // <script id="becookies.tech-scripts" async="" src="https://core.staging.becookies.tech/script.js" data-preview="true" data-id="7cb94940-6e0d-11eb-99c1-bbb73faf0e4b" charset="utf-8"></script>
-  // <meta name="google-site-verification" content="KWM5elXl5PN_X_Fk5XDQCItMMe5qHYvFJkbZUaDbRqg" />
-  // <script id="becookies.tech-scripts" src="https://core.becookies.tech/script.js" data-id="cdf46500-7007-11eb-b393-31e9f2611317" charset="utf-8"></script>
-  // <script id="becookies.tech-scripts" src="https://core.becookies.tech/script.js" data-id="0c7bbe50-a2a2-11eb-a94b-a512dc6b7fed" charset="utf-8"></script>
+  // <script id="becookies.tech-scripts" src="https://core.staging.becookies.tech/script.js" data-id="542e6250-fdc6-11eb-9a47-4108494640b8" charset="utf-8"></script>
   head: {
     title: 'DEMO beCOOKIES',
     meta: [
@@ -28,7 +25,7 @@ export default {
     script: [
       {
         id: 'becookies.tech-scripts',
-        src: 'https://core.becookies.tech/script.js',
+        src: 'https://core.staging.becookies.tech/script.js',
         'data-id': '542e6250-fdc6-11eb-9a47-4108494640b8',
         charset: 'utf-8',
       },
